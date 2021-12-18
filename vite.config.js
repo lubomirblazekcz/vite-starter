@@ -26,7 +26,10 @@ const middleware = {
 export default {
   plugins: [
     nunjucks({
-      templatesDir: resolve(process.cwd(), 'src', 'templates')
+      templatesDir: resolve(process.cwd(), 'src', 'templates'),
+      variables: {
+        'index.html': {title: 'Vite App'}
+      }
     }),
     middleware
   ],

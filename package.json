@@ -1,6 +1,6 @@
 {
   "name": "vite-tailwind",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -19,7 +19,6 @@
     "postcss-custom-media": "^8.0.0",
     "postcss-custom-selectors": "^6.0.0",
     "postcss-import": "^14.0.2",
-    "postcss-nesting": "^10.0.3",
-    "@rollup/plugin-multi-entry": "^4.1.0"
+    "postcss-nesting": "^10.0.3"
   }
 }
