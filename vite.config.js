@@ -1,10 +1,11 @@
 import {resolve} from 'path';
 import nunjucks from 'vite-plugin-nunjucks'
 import tailwindcss from 'tailwindcss'
+import tailwindcssNesting from 'tailwindcss/nesting'
 import autoprefixer from 'autoprefixer'
 import postcssImport from 'postcss-import';
 import postcssNesting from 'postcss-nesting';
-import postcssCustomMedia from 'postcss-custom-media';
+import postcssCustomMedia from 'postcss-custom-media'
 import FastGlob from 'fast-glob'
 
 const middleware = {
@@ -35,7 +36,7 @@ export default {
   ],
   css: {
     postcss: {
-      plugins: [postcssImport, postcssNesting, postcssCustomMedia, tailwindcss, autoprefixer]
+      plugins: [postcssImport, tailwindcssNesting(postcssNesting), postcssCustomMedia, tailwindcss, autoprefixer]
     }
   },
   resolve: {
